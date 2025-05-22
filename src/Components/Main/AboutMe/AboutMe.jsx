@@ -19,12 +19,12 @@ function AboutMe () {
             <div className="content_1">
                 <div className="content_studies">
                     <span className="studies_1">
+                        <h3>Международная Академия Бизнеса и Управления (МАБиУ) г. Москва</h3>
                         <p>Образование: Высшее</p>
                         <p>Форма обучения: очная</p>
                         <p>Год окончания: 2009</p>
                     </span>
                     <span className="studies_2">
-                        <h3>Международная Академия Бизнеса и Управления (МАБиУ) г. Москва</h3>
                         <p>Факультет: Менеджмент организации</p>
                         <p>Специальность: Административный менеджмент</p>
                     </span>
@@ -33,12 +33,12 @@ function AboutMe () {
             <div className="content_1">
                 <div className="content_studies">
                     <span className="studies_1">
+                        <h3>Skillfactory</h3>
                         <p>Повышение квалификации</p>
                         <p>Форма обучения: онлайн</p>
                         <p>Год окончания: 2025</p>
                     </span>
                     <span className="studies_2">
-                        <h3>Skillfactory</h3>
                         <p>Специальность: Fullstack разработчик на python</p>
                     </span>
                 </div>
