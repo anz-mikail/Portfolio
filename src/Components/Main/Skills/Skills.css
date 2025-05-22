@@ -1,0 +1,66 @@
+/*.skills-container{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+.skills-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    grid-gap: 4rem;
+    margin: 4rem 0 1rem 0;
+}
+.skills-icons span {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.skill-icon {
+    width: 4rem;
+    height: 4rem;
+}
+.django, .python, .docker, .postgresql, .html, .css, .js, .excel{
+    padding-left: 1.5rem;
+}
+.django {width: 80%; background-color: #04aa6a;}
+.python {width: 80%; background-color: #04aaaa;}
+.docker {width: 60%; background-color: #e1763d;}
+.postgresql {width: 70%; background-color: rgba(117, 24, 163, 0.73);}
+.html {width: 80%; background-color: #cac1c5;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 85%; background-color: #f44336;}
+.excel {width: 60%; background-color: #808080;}
+
+.content_1 p {
+    padding: 0;
+    margin: 10px;
+}
+.container_1 {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    justify-content: start;
+    align-items: center;
+}
+@media screen and (max-width: 1100px) {
+    .container_1 {
+        grid-template-columns: 1fr 5fr;
+    }
+}
+@media screen and (max-width: 870px) {
+    .container_1 {
+        grid-template-columns: 1fr 4fr;
+    }
+}
+@media screen and (max-width: 720px) {
+    .container_1 {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+@media screen and (max-width: 610px) {
+    .container_1 {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container_1 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
