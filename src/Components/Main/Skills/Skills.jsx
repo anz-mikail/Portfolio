@@ -21,6 +21,7 @@ function Skills () {
         <div className='skills-container'>
             <div className="title-container">
                 <img src={separator}
+                     alt = 'img'
                     className='separator'/>
                 <h2 className={theme? 'title': 'title white'}>
                     {language ? 'SKILLS' : 'Профессиональные навыки'}
