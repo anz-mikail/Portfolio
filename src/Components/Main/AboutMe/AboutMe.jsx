@@ -30,6 +30,19 @@ function AboutMe () {
                     </span>
                 </div>
             </div>
+            <div className="content_1">
+                <div className="content_studies">
+                    <span className="studies_1">
+                        <p>Повышение квалификации</p>
+                        <p>Форма обучения: онлайн</p>
+                        <p>Год окончания: 2025</p>
+                    </span>
+                    <span className="studies_2">
+                        <h3>Skillfactory</h3>
+                        <p>Специальность: Fullstack разработчик на python</p>
+                    </span>
+                </div>
+            </div>
             <h2>Информация о себе</h2>
             <div className="content_1">
                 <ul className="self_info">
