@@ -22,8 +22,8 @@ function Footer () {
             <div className='footer-contacts'>
                 <a href='https://github.com/anz-mikail'><BiLogoGithub/></a>
                 <a href='https://t.me/Mikael_Anz'><BiLogoTelegram/></a>
-                <a href=''><BiLogoVk/></a>
-                <a href=''><BiLogoWhatsapp/></a>
+                {/*<a href=''><BiLogoVk/></a>*/}
+                {/*<a href=''><BiLogoWhatsapp/></a>*/}
             </div>
             <p>@2025 Mikael Anzorov </p>
 
