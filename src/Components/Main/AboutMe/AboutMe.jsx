@@ -1,14 +1,16 @@
 import React from 'react';
 import './AboutMe.css'
+import {useSelector} from "react-redux";
 
 
 function AboutMe () {
+    const language = useSelector(state => state.Data.language)
     return (
         <>
             <div className="brief-info">
                 <div className="brief-info_1">
-                    <h3>Анзоров Микаэль</h3>
-                    <h3>Fullstack Разработчик на Python</h3>
+                    <h3>{ language ? 'Анзоров Микаэль': 'Mikael Anzorov'}</h3>
+                    <h3>{ language ? 'Fullstack Разработчик на Python' : 'Python Fullstack Developer'}</h3>
                 </div>
                 <div className="brief-info_2">
                     <img className="photo" alt="my face" width="300"/>
@@ -50,13 +52,6 @@ function AboutMe () {
                     <li>Женат, имею четверо детей</li>
                     <li>Хобби: Crossfit</li>
                     <li>Вредных привычек не имею</li>
-                </ul>
-            </div>
-            <h2>Контакты</h2>
-            <div className="content_1">
-                <ul className="self_info">
-                    <li>Телефон: 8(938)024-04-66</li>
-                    <li>e-mail: anz.mikail@mail.ru</li>
                 </ul>
             </div>
         </>

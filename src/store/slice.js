@@ -6,7 +6,7 @@ const Slice = createSlice({
     initialState:{
         language: false,
         menuActive: true,
-        theme:false,
+        theme:true,
     },
     reducers: {
         ChangeLanguage: (state) => {

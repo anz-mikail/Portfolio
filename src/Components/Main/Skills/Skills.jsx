@@ -11,6 +11,7 @@ import react from '../../../styles/icons/Group 14.svg'
 import node from '../../../styles/icons/Group (2).svg'
 import MysQl from '../../../styles/icons/Vector.svg'
 import separator from '../../../styles/icons/separatorBlack.svg'
+import python from '../../../styles/icons/python-icon.svg'
 
 
 function Skills () {
@@ -33,8 +34,8 @@ function Skills () {
                     <p>GIT</p>
                 </span>
                 <span>
-                    <img src={bootstrap} alt='bootstrap' className='skill-icon'/>
-                    <p>BOOTSTRAP</p>
+                    <img src={python} alt='python' className='skill-icon'/>
+                    <p>PYTHON</p>
                 </span>
                 <span>
                     <img src={html} alt='html' className='skill-icon'/>

@@ -19,11 +19,11 @@ function Footer () {
                 <HiMiniChevronDoubleUp  className='top-icon'/>
                 <p>{language? 'BACK TO TOP':'Вернуться в начало'}</p>
             </div>
-            <div>
-                <BiLogoGithub />
-                <BiLogoTelegram />
-                <BiLogoVk />
-                <BiLogoWhatsapp />
+            <div className='footer-contacts'>
+                <a href='https://github.com/anz-mikail'><BiLogoGithub/></a>
+                <a href='https://t.me/Mikael_Anz'><BiLogoTelegram/></a>
+                <a><BiLogoVk/></a>
+                <a><BiLogoWhatsapp/></a>
             </div>
             <p>@2025 Mikael Anzorov </p>
 

@@ -1,0 +1,16 @@
+.contactMe li{
+    margin-top: 1rem;
+}
+.contactMe a{
+    color: var(--body-white);
+    font-size: 20px;
+    margin-left: 10px;
+    transition: 0.7s;
+}
+.contactMe.white a{
+    color: var(--black);
+}
+.contactMe a:hover{
+    font-size: 25px;
+    color: var(--kva);
+}
