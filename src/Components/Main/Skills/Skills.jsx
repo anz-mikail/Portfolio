@@ -2,7 +2,6 @@ import React from 'react';
 import {useSelector} from "react-redux";
 import './Skills.css'
 import git from '../../../styles/icons/git.svg'
-import bootstrap from '../../../styles/icons/bootstrap.svg'
 import html from '../../../styles/icons/Group 12.svg'
 import css from '../../../styles/icons/Group 13.svg'
 import JS from '../../../styles/icons/Group.svg'
