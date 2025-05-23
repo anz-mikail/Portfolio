@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css'
 import {useSelector} from "react-redux";
-import { BiLogoGithub, BiLogoTelegram,  BiLogoVk, BiLogoWhatsapp } from "react-icons/bi";
+import { BiLogoGithub, BiLogoTelegram } from "react-icons/bi";
 import { HiMiniChevronDoubleUp } from "react-icons/hi2";
 
 
@@ -22,8 +22,6 @@ function Footer () {
             <div className='footer-contacts'>
                 <a href='https://github.com/anz-mikail'><BiLogoGithub/></a>
                 <a href='https://t.me/Mikael_Anz'><BiLogoTelegram/></a>
-                {/*<a href=''><BiLogoVk/></a>*/}
-                {/*<a href=''><BiLogoWhatsapp/></a>*/}
             </div>
             <p>@2025 Mikael Anzorov </p>
 
