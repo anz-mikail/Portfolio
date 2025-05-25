@@ -1,25 +1,36 @@
 import React from 'react';
-import { BiLogoGithub, BiLogoTelegram, BiLogoWhatsapp } from "react-icons/bi";
 import './ContactMe.css'
 import {useSelector} from "react-redux";
+import separator from "../../../styles/icons/separatorBlack.svg";
 
 
 function ContactMe () {
+    const language = useSelector(state => state.Data.language)
     const theme = useSelector(state => state.Data.theme)
     return (
-        <div className={theme? "contactMe": "contactMe white" }>
-            <h2>Контакты</h2>
+        <div>
+            <div className="title-container">
+                <h2 className={theme ? 'title' : 'title white'}>
+                    {!language ? 'Контакты' : 'Contacts'}
+                </h2>
+            </div>
             <div>
                 <ul className="self_info">
-                    <li>Телефон: 8(938)024-04-66 <BiLogoWhatsapp/></li>
+                    <li>{!language ? "Телефон" : "Phone"}: 8(938)024-04-66</li>
                     <li>e-mail: anz.mikail@mail.ru</li>
-                    <li>GitHub: <a href='https://github.com/anz-mikail'><BiLogoGithub/></a></li>
-                    <li>Telegram: <a href='https://t.me/Mikael_Anz'><BiLogoTelegram/></a></li>
+                    <li>GitHub: github.com/anz-mikail</li>
+                    <li>Telegram: @Mikael_Anz</li>
                 </ul>
+            </div>
+            <div className="title-container">
+                <img src={separator}
+                     alt='img'
+                     className='separator'
+                />
             </div>
         </div>
     )
 }
 
 
-export default ContactMe;
+                export default ContactMe;

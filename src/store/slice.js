@@ -7,6 +7,7 @@ const Slice = createSlice({
         language: false,
         menuActive: true,
         theme:true,
+        backToHome: false,
     },
     reducers: {
         ChangeLanguage: (state) => {
@@ -18,6 +19,9 @@ const Slice = createSlice({
         ChangeTheme: (state) => {
             state.theme = (!state.theme);
         },
+        ChangeBackToHome: (state) => {
+            state.backToHome = (!state.backToHome);
+        },
     }
 });
 
@@ -26,5 +30,6 @@ export const {
     ChangeLanguage,
     ChangeMenuActive,
     ChangeTheme,
+    ChangeBackToHome,
 } = Slice.actions;
 export default Slice.reducer;

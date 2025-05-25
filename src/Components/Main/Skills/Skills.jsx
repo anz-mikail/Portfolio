@@ -6,11 +6,13 @@ import html from '../../../styles/icons/Group 12.svg'
 import css from '../../../styles/icons/Group 13.svg'
 import JS from '../../../styles/icons/Group.svg'
 import TS from '../../../styles/icons/Group (1).svg'
-import react from '../../../styles/icons/Group 14.svg'
+import react from '../../../styles/icons/react.png'
 import node from '../../../styles/icons/Group (2).svg'
-import MysQl from '../../../styles/icons/Vector.svg'
 import separator from '../../../styles/icons/separatorBlack.svg'
 import python from '../../../styles/icons/python-icon.svg'
+import docker from '../../../styles/icons/docker.png'
+import sql from '../../../styles/icons/sql.png'
+import django from '../../../styles/icons/django.png'
 
 
 function Skills () {
@@ -20,10 +22,7 @@ function Skills () {
     return (
         <div className='skills-container'>
             <div className="title-container">
-                <img src={separator}
-                     alt = 'img'
-                    className='separator'/>
-                <h2 className={theme? 'title': 'title white'}>
+                <h2 className={theme ? 'title' : 'title white'}>
                     {language ? 'SKILLS' : 'Профессиональные навыки'}
                 </h2>
             </div>
@@ -33,20 +32,24 @@ function Skills () {
                     <p>GIT</p>
                 </span>
                 <span>
+                    <img src={docker} alt='DOCKER' className='skill-icon'/>
+                    <p>DOCKER</p>
+                </span>
+                <span>
+                    <img src={sql} alt='SQL' className='skill-icon'/>
+                    <p>SQL</p>
+                </span>
+                <span>
                     <img src={python} alt='python' className='skill-icon'/>
                     <p>PYTHON</p>
                 </span>
                 <span>
-                    <img src={html} alt='html' className='skill-icon'/>
-                    <p>HTML5</p>
+                    <img src={django} alt='django' className='skill-icon'/>
+                    <p>DJANGO</p>
                 </span>
                 <span>
                     <img src={JS} alt='JS' className='skill-icon'/>
                     <p>JAVASCRIPT</p>
-                </span>
-                <span>
-                    <img src={css} alt='css' className='skill-icon'/>
-                    <p>CSS3</p>
                 </span>
                 <span>
                     <img src={TS} alt='TS' className='skill-icon'/>
@@ -61,43 +64,65 @@ function Skills () {
                     <p>NODEJS</p>
                 </span>
                 <span>
-                    <img src={MysQl} alt='MysQl' className='skill-icon'/>
-                    <p>MYSQL</p>
+                    <img src={html} alt='html' className='skill-icon'/>
+                    <p>HTML5</p>
+                </span>
+                <span>
+                    <img src={css} alt='css' className='skill-icon'/>
+                    <p>CSS3</p>
                 </span>
             </div>
             <div className="content_1">
                 <div className="container_1">
-                    <p>Python</p>
-                    <div className="skills python">60%</div>
+                    <p>GIT</p>
+                    <div className="skills-git">50%</div>
                 </div>
                 <div className="container_1">
-                    <p>Django</p>
-                    <div className="skills django">60%</div>
+                    <p>DOCKER</p>
+                    <div className="skills-docker">50%</div>
                 </div>
                 <div className="container_1">
-                    <p>PostgreSQL</p>
-                    <div className="skills postgresql">70%</div>
+                    <p>SQL</p>
+                    <div className="skills-sql">50%</div>
                 </div>
                 <div className="container_1">
-                    <p>Docker</p>
-                    <div className="skills docker">80%</div>
+                    <p>PYTHON</p>
+                    <div className="skills-python">75%</div>
                 </div>
                 <div className="container_1">
-                    <p>HTML</p>
-                    <div className="skills html">70%</div>
+                    <p>DJANGO</p>
+                    <div className="skills-django">75%</div>
                 </div>
                 <div className="container_1">
-                    <p>CSS</p>
-                    <div className="skills css">80%</div>
+                    <p>JAVASCRIPT</p>
+                    <div className="skills-js">80%</div>
                 </div>
                 <div className="container_1">
-                    <p>JavaScript</p>
-                    <div className="skills js">65%</div>
+                    <p>TYPESCRIPT</p>
+                    <div className="skills-ts">65%</div>
                 </div>
                 <div className="container_1">
-                    <p>Excel</p>
-                    <div className="skills excel">80%</div>
+                    <p>REACT</p>
+                    <div className="skills-react">80%</div>
                 </div>
+                <div className="container_1">
+                    <p>NODE JS</p>
+                    <div className="skills-nodeJs">55%</div>
+                </div>
+                <div className="container_1">
+                    <p>HTML5</p>
+                    <div className="skills-html">75%</div>
+                </div>
+                <div className="container_1">
+                    <p>CSS3</p>
+                    <div className="skills-css">75%</div>
+                </div>
+            </div>
+            <div className="title-container">
+                <img src={separator}
+                     alt='img'
+                     className='separator'
+                />
             </div>
         </div>
     )

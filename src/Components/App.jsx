@@ -2,15 +2,14 @@ import React from 'react';
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
-import './App.css';
-import AboutMe from "./Main/AboutMe/AboutMe";
-import Skills from "./Main/Skills/Skills";
-import Portfolio from "./Main/Portfolio/Portfolio";
-import ContactMe from "./Main/ContactMe/ContactMe";
 import {Routes, Route} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {ChangeMenuActive} from "../store/slice";
-
+import './App.css';
+import Silant from "./Main/Portfolio/prj_silant/Silant";
+import Scan from "./Main/Portfolio/prj_scan/Scan";
+import Currency from "./Main/Portfolio/prj_currency/Currency";
+import ZooBot from "./Main/Portfolio/prj_zooBot/ZooBot";
 
 
 function App() {
@@ -30,10 +29,10 @@ function App() {
                 className={theme ? "body" : 'body white'}>
                 <Routes>
                     <Route path='/' element={<Main/>}/>
-                    <Route path='/about-me' element={<AboutMe/>}/>
-                    <Route path='/skills' element={<Skills/>}/>
-                    <Route path='/portfolio' element={<Portfolio/>}/>
-                    <Route path='/contact-me' element={<ContactMe/>}/>
+                    <Route path='/silant' element={<Silant/>}/>
+                    <Route path='/scan' element={<Scan/>}/>
+                    <Route path='/currency' element={<Currency/>}/>
+                    <Route path='/zoobot' element={<ZooBot/>}/>
                 </Routes>
             </main>
             <Footer/>

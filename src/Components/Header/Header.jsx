@@ -22,11 +22,25 @@ function Header () {
     const handleChangeTheme = () => {
         dispatch(ChangeTheme())
     }
+    const handleClickAboutMe = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+    const handleClickSkills = () => {
+        window.scrollTo({ top: 900, behavior: 'smooth' })
+    }
+    const handleClickPortfolio = () => {
+        window.scrollTo({ top: 1800, behavior: 'smooth' })
+    }
+    const handleClickContactMe = () => {
+        window.scrollTo({ top: 2500, behavior: 'smooth' })
+    }
     return (
         <header className={theme? 'header': 'header white'}>
             <nav className={theme?'header-settings': 'header-settings white'}>
-                <Link to="/"
-                      className={theme ? 'LinkHome' : 'LinkHome white'}>
+                <Link
+                    to="/"
+                    onClick={handleClickAboutMe}
+                    className={theme ? 'LinkHome' : 'LinkHome white'}>
                     <BiSolidHome className='header-moon'/>
                 </Link>
                 <HiMiniMoon
@@ -45,22 +59,26 @@ function Header () {
             </nav>
             <nav className={menuActive ? 'navbar' : 'navbar active'}
                 style={!theme ? {background: 'var(--white)'} : {background: 'var(--black)'}}>
-                <Link to="/about-me"
-                      className={theme? 'Link':'Link white'}>
+                <p
+                    onClick={handleClickAboutMe}
+                    className={theme? 'Link':'Link white'}>
                     {language ? 'About me' : 'Обо мне'}
-                </Link>
-                <Link to="/skills"
-                      className={theme? 'Link':'Link white'} >
+                </p>
+                <p
+                    onClick={handleClickSkills}
+                    className={theme? 'Link':'Link white'} >
                     {language ? 'Skills' : 'Профессиональные навыки'}
-                </Link>
-                <Link to="/portfolio"
-                      className={theme? 'Link':'Link white'}>
+                </p>
+                <p
+                    onClick={handleClickPortfolio}
+                    className={theme? 'Link':'Link white'}>
                     {language ? 'Portfolio' : 'Мои проекты'}
-                </Link>
-                <Link to="/contact-me"
-                      className={theme? 'Link':'Link white'} >
+                </p>
+                <p
+                    onClick={handleClickContactMe}
+                    className={theme? 'Link':'Link white'} >
                     {language ? 'Contact Me' : 'Мои контакты'}
-                </Link>
+                </p>
             </nav>
             <button
                 className={menuActive ? 'burger-btn' : 'burger-btn active'}

@@ -20,8 +20,8 @@ function Footer () {
                 <p>{language? 'BACK TO TOP':'Вернуться в начало'}</p>
             </div>
             <div className='footer-contacts'>
-                <a href='https://github.com/anz-mikail'><BiLogoGithub/></a>
-                <a href='https://t.me/Mikael_Anz'><BiLogoTelegram/></a>
+                <a href='https://github.com/anz-mikail' target='_blank'><BiLogoGithub/></a>
+                <a href='https://t.me/Mikael_Anz' target='_blank'><BiLogoTelegram/></a>
             </div>
             <p>@2025 Mikael Anzorov </p>
 

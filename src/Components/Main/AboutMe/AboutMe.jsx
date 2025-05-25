@@ -1,60 +1,52 @@
 import React from 'react';
 import './AboutMe.css'
 import {useSelector} from "react-redux";
+import {BiLogoGithub, BiLogoTelegram} from "react-icons/bi";
+import shlyapa from "../../../styles/icons/hat.png";
+import separator from "../../../styles/icons/separatorBlack.svg";
 
 
 function AboutMe () {
     const language = useSelector(state => state.Data.language)
+    const theme = useSelector(state => state.Data.theme)
     return (
-        <>
+        <div className='aboutMe-container'>
             <div className="brief-info">
                 <div className="brief-info_1">
-                    <h3>{ language ? 'Анзоров Микаэль': 'Mikael Anzorov'}</h3>
-                    <h3>{ language ? 'Fullstack Разработчик на Python' : 'Python Fullstack Developer'}</h3>
-                </div>
-                <div className="brief-info_2">
-                    <img className="photo" alt="my face" width="300"/>
-                </div>
-            </div>
-
-            <h2>Образование</h2>
-            <div className="content_1">
-                <div className="content_studies">
-                    <span className="studies_1">
-                        <h3>Международная Академия Бизнеса и Управления (МАБиУ) г. Москва</h3>
-                        <p>Образование: Высшее</p>
-                        <p>Форма обучения: очная</p>
-                        <p>Год окончания: 2009</p>
-                    </span>
-                    <span className="studies_2">
-                        <p>Факультет: Менеджмент организации</p>
-                        <p>Специальность: Административный менеджмент</p>
-                    </span>
-                </div>
-            </div>
-            <div className="content_1">
-                <div className="content_studies">
-                    <span className="studies_1">
-                        <h3>Skillfactory</h3>
-                        <p>Повышение квалификации</p>
-                        <p>Форма обучения: онлайн</p>
-                        <p>Год окончания: 2025</p>
-                    </span>
-                    <span className="studies_2">
-                        <p>Специальность: Fullstack разработчик на python</p>
-                    </span>
+                    <h1>{!language ? 'Анзоров Микаэль' : 'Mikael Anzorov'}
+                        <img src={shlyapa} alt="shlyapa" className='shlyapa'/>
+                    </h1>
+                    <h2>{!language ? 'Fullstack Разработчик на Python' : 'Python Fullstack Developer'}
+                    </h2>
+                    <p> С детства нравится математика и сложные,
+                        рутинные задачи. Люблю доводить дело до идеала,
+                        и получаю моральное удовлетворение от выполненной работы.
+                        Высокая усидчивость. </p>
+                    <p>Программирование начал изучать в 2023 году,
+                        опыт работы экономистом помогает мне в программировании,
+                        т.к. приходилось работать с большим объемом данных.</p>
+                    <p>Вредных привычек не имею, в свободное время люблю прогулки и занимаюсь Crossfit-ом.</p>
+                    <div className="link-icon-container">
+                        <a
+                            className={theme ? "link-icon" : "link-icon white"}
+                            href='https://github.com/anz-mikail'
+                            target='_blank'><BiLogoGithub/>
+                        </a>
+                        <a
+                            className={theme ? "link-icon" : "link-icon white"}
+                            href='https://t.me/Mikael_Anz'
+                            target='_blank'><BiLogoTelegram/>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <h2>Информация о себе</h2>
-            <div className="content_1">
-                <ul className="self_info">
-                    <li>Место проживания г. Грозный</li>
-                    <li>Женат, имею четверо детей</li>
-                    <li>Хобби: Crossfit</li>
-                    <li>Вредных привычек не имею</li>
-                </ul>
+            <div className="title-container">
+                <img src={separator}
+                     alt='img'
+                     className='separator'
+                />
             </div>
-        </>
+        </div>
     )
 }
 

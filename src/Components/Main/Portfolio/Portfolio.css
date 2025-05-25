@@ -1,0 +1,35 @@
+.portfolios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 50px;
+}
+.prjImage {
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid var(--black);
+    box-shadow: 20px 20px rgba(27, 24, 24, 0.32);
+}
+.linkToBack {
+    font-size: 30px;
+    color: var(--body-white);
+    transition: 0.7s;
+    cursor: pointer;
+}
+.linkToBack:hover {
+    color: var(--kvaWhite);
+}
+.linkToBack.white {
+    color: var(--black);
+    transition: 0.7s;
+}
+.slider-container {
+    margin:0 10%;
+}
+.prj-img {
+    width: 80%;
+    border: 3px solid var(--black);
+    border-radius: 20px;
+}
+

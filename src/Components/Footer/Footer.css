@@ -31,7 +31,7 @@
     font-size: 20px;
     transition: 0.7s;
 }
-.footer a:hover{
+.footer a:hover, .footer.white a:hover{
     font-size: 25px;
     color: var(--kva);
 }
