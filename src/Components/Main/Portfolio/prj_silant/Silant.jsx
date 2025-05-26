@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import {useDispatch, useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 
-import '../Portfolio.css'
+import '../prj.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {NextArrow, PrevArrow} from '../Arrow'
@@ -43,9 +43,9 @@ function Silant () {
     return (
         <>
             <div className="title-container">
-                <h2 className={theme ? 'title' : 'title white'}>
+                <h3 className={theme ? 'title' : 'title white'}>
                     {language ? 'Silant project' : 'Проект Силант'}
-                </h2>
+                </h3>
             </div>
             <div className='text-container'>
                 <p>Силант (учебный проект)</p>

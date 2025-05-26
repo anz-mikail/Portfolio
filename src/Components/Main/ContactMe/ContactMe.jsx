@@ -10,9 +10,9 @@ function ContactMe () {
     return (
         <div>
             <div className="title-container">
-                <h2 className={theme ? 'title' : 'title white'}>
+                <h3 className={theme ? 'title' : 'title white'}>
                     {!language ? 'Контакты' : 'Contacts'}
-                </h2>
+                </h3>
             </div>
             <div>
                 <ul className="self_info">

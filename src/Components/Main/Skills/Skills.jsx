@@ -22,9 +22,9 @@ function Skills () {
     return (
         <div className='skills-container'>
             <div className="title-container">
-                <h2 className={theme ? 'title' : 'title white'}>
+                <h3 className={theme ? 'title' : 'title white'}>
                     {language ? 'SKILLS' : 'Профессиональные навыки'}
-                </h2>
+                </h3>
             </div>
             <div className="skills-icons">
                 <span>

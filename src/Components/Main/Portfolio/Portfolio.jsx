@@ -29,9 +29,9 @@ function Portfolio () {
     return (
         <>
             <div className="title-container">
-                <h2 className={theme ? 'title' : 'title white'}>
+                <h3 className={theme ? 'title' : 'title white'}>
                     {language ? 'PORTFOLIO' : 'Мои проекты'}
-                </h2>
+                </h3>
             </div>
             <div className='portfolios-container'>
                 <img src={silantImage} alt='img'

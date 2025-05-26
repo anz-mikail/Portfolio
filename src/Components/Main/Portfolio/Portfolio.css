@@ -1,35 +1,9 @@
 .portfolios-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 50px;
-}
-.text-container {
-    margin: 50px 100px;
-    font-size: 1.4rem;
-}
-.text-container ul p{
-    margin: 40px 0;
-}
-.text-container p {
-    font-size: 1.6rem;
-}
-.text-container li{
-    padding: 15px;
-}
-.text-container a {
-    text-decoration: none;
-    font-size: 2rem;
-    color: var(--kva);
-    border: 5px solid var(--kva);
-    padding: 5px;
-}
-.text-container a:hover {
-    color: darkred;
-    border-color:darkred;
-}
-.text-container a:active {
-    color: var(--white);
-    border-color:var(--white);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
 }
 .prjImage {
     width: 500px;
@@ -49,26 +23,16 @@
     border: 1px solid var(--kva);
     transition: 1s;
 }
-.linkToBack {
-    font-size: 30px;
-    color: var(--body-white);
-    transition: 0.7s;
-    cursor: pointer;
+@media screen and (max-width: 768px) {
+    .portfolios-container {
+        display: grid;
+        justify-content: center;
+    }
+    .prjImage {
+        width: 350px;
+        height: 200px;
+    }
 }
-.linkToBack:hover, .linkToBack.white:hover {
-    color: var(--kva);
-}
-.linkToBack.white {
-    color: var(--black);
-    transition: 0.7s;
-}
-.slider-container {
-    margin:0 10%;
-}
-.prj-img {
-    width: 80%;
-    border: 3px solid var(--black);
-    border-radius: 20px;
-}
+
 
 

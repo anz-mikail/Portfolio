@@ -29,13 +29,12 @@
 .ChangeLanguage-btn {
     background-color: var(--gold);
     border-radius: 10px;
-    width: 2rem;
+    width: 1.8rem;
     cursor: pointer;
-    font-size: 1rem;
     font-weight: bold;
 }
 .ChangeLanguage-btn:hover {
-    font-size: 1.2rem;
+    width: 2rem;
     background-color: var(--kva);
     transform: rotate(360deg);
     transition: 0.5s;
@@ -43,11 +42,10 @@
 .ChangeLanguage-btn:active {
     background-color: var(--white);
     transition: 0.5s;
-    font-size: 1.4rem;
 }
 .header-moon {
     color: var(--gold);
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     cursor: pointer;
 }
 .header-moon:hover {
@@ -57,8 +55,7 @@
     transition: 0.5s;
 }
 .header-moon:active {
-    font-size: 2rem;
-    color: var(--red);
+    color: var(--white);
 }
 .navbar {
     display: flex;
@@ -74,7 +71,7 @@
     color: var(--gold);
 }
 .Link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: var(--white);
     transition: 1s;
@@ -183,6 +180,7 @@
     }
     .navbar.active {
         transform: translateX(330px);
+        z-index: 20;
     }
     .burger-btn {
         display: block;

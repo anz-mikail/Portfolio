@@ -1,18 +1,16 @@
-import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 import React from "react";
 
 
 export function NextArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <FaChevronRight
+        <div
             className={className}
             style={{ ...style,
                 display: "block",
-                color:"darkred",
-                width:"50px",
-                height:"50px",
-                marginRight:"40px",
+                backgroundColor:"#029491",
+                borderRadius: "50%",
+                marginRight:"35px",
             }}
             onClick={onClick}
         />
@@ -23,15 +21,14 @@ export function NextArrow(props) {
 export function PrevArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <FaChevronLeft
+        <div
             className={className}
             style={{ ...style,
                 display: "block",
-                color:"darkred",
-                width:"50px",
-                height:"50px",
                 marginLeft:"40px",
-                zIndex: '100',
+                backgroundColor:"#029491",
+                borderRadius: "50%",
+                zIndex: "5",
             }}
             onClick={onClick}
         />

@@ -1,0 +1,45 @@
+.text-container {
+    margin: 0 0 50px 20px;
+}
+.text-container p{
+    font-size: 1.1rem;
+}
+.text-container li{
+    padding: 15px;
+}
+.text-container a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--kva);
+    border: 5px solid var(--kva);
+    padding: 5px;
+}
+.text-container a:hover {
+    color: darkred;
+    border-color:darkred;
+}
+.text-container a:active {
+    color: var(--white);
+    border-color:var(--white);
+}
+.linkToBack {
+    font-size: 20px;
+    color: var(--body-white);
+    transition: 0.7s;
+    cursor: pointer;
+}
+.linkToBack:hover, .linkToBack.white:hover {
+    color: var(--kva);
+}
+.linkToBack.white {
+    color: var(--black);
+    transition: 0.7s;
+}
+.slider-container {
+    margin:0 10%;
+}
+.prj-img {
+    width: 80%;
+    border: 3px solid var(--black);
+    border-radius: 20px;
+}
