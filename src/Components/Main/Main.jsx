@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import './Main.css'
 import AboutMe from "./AboutMe/AboutMe";
 import Skills from "./Skills/Skills";
 import Portfolio from "./Portfolio/Portfolio";
@@ -15,7 +14,7 @@ function Main () {
 
     useEffect(() => {
         if (backToHome) {
-            window.scrollTo({ top: 1800, behavior: 'smooth' })
+            window.scrollTo({ top: 1500, behavior: 'smooth' })
             dispatch(ChangeBackToHome())
         }
     })

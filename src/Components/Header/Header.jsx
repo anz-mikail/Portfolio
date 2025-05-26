@@ -1,17 +1,19 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import { BiSolidHome } from "react-icons/bi";
+import {BiLogoGithub, BiLogoTelegram, BiSolidHome} from "react-icons/bi";
 import { HiMiniMoon, HiMiniSun } from "react-icons/hi2";
 import './Header.css'
 import {ChangeLanguage, ChangeMenuActive, ChangeTheme} from "../../store/slice";
 
 
 function Header () {
+
     const dispatch = useDispatch()
     const language = useSelector(state => state.Data.language)
     const menuActive = useSelector(state => state.Data.menuActive)
     const theme = useSelector(state => state.Data.theme)
+    const navigate = useNavigate();
 
     const handleChangeMenuActive = () => {
         dispatch(ChangeMenuActive())
@@ -23,20 +25,36 @@ function Header () {
         dispatch(ChangeTheme())
     }
     const handleClickAboutMe = () => {
+        navigate('/');
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
     const handleClickSkills = () => {
-        window.scrollTo({ top: 900, behavior: 'smooth' })
+        navigate('/');
+        window.scrollTo({ top: 630, behavior: 'smooth' })
     }
     const handleClickPortfolio = () => {
-        window.scrollTo({ top: 1800, behavior: 'smooth' })
+        navigate('/');
+        window.scrollTo({ top: 1500, behavior: 'smooth' })
     }
     const handleClickContactMe = () => {
-        window.scrollTo({ top: 2500, behavior: 'smooth' })
+        navigate('/');
+        window.scrollTo({ top: 2200, behavior: 'smooth' })
     }
     return (
         <header className={theme? 'header': 'header white'}>
-            <nav className={theme?'header-settings': 'header-settings white'}>
+            <nav className={theme ? 'header-settings' : 'header-settings white'}>
+                <a
+                    className={theme ? 'LinkHome' : 'LinkHome white'}
+                    href='https://github.com/anz-mikail'
+                    rel="noreferrer"
+                    target='_blank'><BiLogoGithub className='header-moon'/>
+                </a>
+                <a
+                    className={theme ? 'LinkHome' : 'LinkHome white'}
+                    href='https://t.me/Mikael_Anz'
+                    rel="noreferrer"
+                    target='_blank'><BiLogoTelegram className='header-moon'/>
+                </a>
                 <Link
                     to="/"
                     onClick={handleClickAboutMe}
@@ -58,15 +76,15 @@ function Header () {
                 </button>
             </nav>
             <nav className={menuActive ? 'navbar' : 'navbar active'}
-                style={!theme ? {background: 'var(--white)'} : {background: 'var(--black)'}}>
+                 style={!theme ? {background: 'var(--white)'} : {background: 'var(--black)'}}>
                 <p
                     onClick={handleClickAboutMe}
-                    className={theme? 'Link':'Link white'}>
+                    className={theme ? 'Link' : 'Link white'}>
                     {language ? 'About me' : 'Обо мне'}
                 </p>
                 <p
                     onClick={handleClickSkills}
-                    className={theme? 'Link':'Link white'} >
+                    className={theme ? 'Link' : 'Link white'}>
                     {language ? 'Skills' : 'Профессиональные навыки'}
                 </p>
                 <p

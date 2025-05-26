@@ -19,10 +19,11 @@
     --blue: #163E6C;
     --red: #D20A11;
     --white: #b1baba;
-    --black: #1A1A1A;
+    --black: #01010b;
     --body-black: #b1baba;
     --body-white: #FAFAFA;
     --gold: #937f2a;
+    --whiteGold: #ffcf05;
     --grey: #d1cfc5;
     --kva: #029491;
     --kvaWhite: #7ce3e1;
@@ -30,6 +31,7 @@
 .App {
     font-family: Monserrat, Helvetica, sans-serif;
     color: var(--body-white);
+    font-weight: 600;
     transition: 1s;
     width: 100%;
 }
@@ -39,11 +41,12 @@
 }
 .body {
     padding: 120px 70px 50px 50px ;
-    background-color: var(--body-black);
+    background-image: url("../styles/image/sl_031420_28950_10.jpg");
     transition: 1s;
 }
 .body.white {
     background-color: var(--body-white);
+    background-image: url("../styles/image/neoWhite.jpg");
     transition: 1s;
 }
 .title-container {

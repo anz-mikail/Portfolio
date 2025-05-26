@@ -44,8 +44,24 @@ function Currency () {
         <>
             <div className="title-container">
                 <h2 className={theme ? 'title' : 'title white'}>
-                    {language ? 'Silant project' : 'Проект Силант'}
+                    {language ? 'Сrypto wallet' : 'Проект Криптокошелёк'}
                 </h2>
+            </div>
+            <div className='text-container'>
+                <p>Криптокошелёк (тестовое задание)</p>
+                <ul><p>В рамках задания реализовал frontend следующим образом :</p>
+                    <li>Использовал React, TypeScript и Redux Toolkit.</li>
+                    <li>Отображение списка активов с полями:
+                        название, количество, текущая цена, общая стоимость, изменение за 24 часа (в процентах),
+                        доля в портфеле (в процентах от общей стоимости).
+                    </li>
+                    <li>Интегрировал WebSocket для real-time обновления цен Bitcoin и других активов.</li>
+                    <li>Форму для добавления активов.</li>
+                    <li>Локальное сохранение активов после добавления.</li>
+                    <li>Удаление на клик по активу. </li>
+                    <li>Виртуализация списка для поддержки более 100 активов.</li>
+                </ul>
+                <a href='https://github.com/anz-mikail/Currency_Wallet_React.git' target='_blank' rel="noreferrer">Исходный код</a>
             </div>
             <Slider {...settings}>
                 <div className="slider-container">

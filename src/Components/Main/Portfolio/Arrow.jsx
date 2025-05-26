@@ -9,10 +9,10 @@ export function NextArrow(props) {
             className={className}
             style={{ ...style,
                 display: "block",
-                color:"grey",
+                color:"darkred",
                 width:"50px",
                 height:"50px",
-                margin:"-10px",
+                marginRight:"40px",
             }}
             onClick={onClick}
         />
@@ -27,10 +27,11 @@ export function PrevArrow(props) {
             className={className}
             style={{ ...style,
                 display: "block",
-                color:"grey",
+                color:"darkred",
                 width:"50px",
                 height:"50px",
-                margin:"-10px",
+                marginLeft:"40px",
+                zIndex: '100',
             }}
             onClick={onClick}
         />

@@ -44,8 +44,25 @@ function Scan () {
         <>
             <div className="title-container">
                 <h2 className={theme ? 'title' : 'title white'}>
-                    {language ? 'Silant project' : 'Проект Силант'}
+                    {language ? 'Scan project' : 'Проект СКАН'}
                 </h2>
+            </div>
+            <div className='text-container'>
+                <p>СКАН (учебный проект)</p>
+                <p>О проекте:</p>
+                <p> - Это сервис поиска публикаций о компании по её ИНН.
+                </p>
+                <ul><p>Создал frontend часть проекта в котором:</p>
+                    <li>Сверстал необходимые части интерфейса с макета figma.</li>
+                    <li>Адаптировал свёрстанные страницы под мобильную версию.</li>
+                    <li>Настроил роутинг и разделение прав, так что все страницы, кроме главной,
+                        должны быть доступны только зарегистрированному пользователю.</li>
+                    <li>Подключил бэкенд-часть к фронтенду и настроил отправку запросов.</li>
+                    <li>Отладил детали для гладкого UX (пользовательского опыта):
+                        добавил лоадеры, валидацию форм и оповещения.</li>
+                </ul>
+                <a href='https://github.com/anz-mikail/Scan_React.git' target='_blank' rel="noreferrer">Исходный
+                    код</a>
             </div>
             <Slider {...settings}>
                 <div className="slider-container">
