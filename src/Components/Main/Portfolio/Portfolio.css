@@ -3,7 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     justify-items: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 .prjImage {
     width: 500px;
@@ -11,15 +11,15 @@
     cursor: pointer;
     border-radius: 15px;
     border: 1px solid var(--black);
-    box-shadow: 20px 20px 15px rgba(27, 24, 24, 0.32);
+    box-shadow: 15px 15px 15px rgba(27, 24, 24, 0.32);
     transition: 1s;
 }
 .prjImage.white {
-    box-shadow: 20px 20px 15px var(--white);
+    box-shadow: 15px 15px 15px var(--white);
     transition: 1s;
 }
 .prjImage:hover {
-    box-shadow: 20px 20px 15px var(--kva);
+    box-shadow: 15px 15px 15px var(--kva);
     border: 1px solid var(--kva);
     transition: 1s;
 }
