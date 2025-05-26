@@ -8,7 +8,6 @@ import separator from "../../../styles/icons/separatorBlack.svg";
 
 function AboutMe () {
     const language = useSelector(state => state.Data.language)
-    const theme = useSelector(state => state.Data.theme)
     return (
         <>
                 <div className='aboutMe-container'>
