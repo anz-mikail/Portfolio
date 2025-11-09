@@ -28,7 +28,7 @@ function App() {
                 onClick={handleChangeMenuActive}
                 className={theme ? "body" : 'body white'}>
                 <Routes>
-                    <Route path='/' element={<Main/>}/>
+                    <Route path='/portfolio' element={<Main/>}/>
                     <Route path='/silant' element={<Silant/>}/>
                     <Route path='/scan' element={<Scan/>}/>
                     <Route path='/currency' element={<Currency/>}/>
